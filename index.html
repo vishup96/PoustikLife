@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poshtik Life</title>
+
+    <!-- font Awesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!--  Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- responsive -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- google font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- swipper css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <!----------------  header ------------------->
+    <header>
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+            <h1><a class="logo" href="index.html"><img src="./assets/images/paushtik-logo.png" alt=""></a></h1>
+            <div class="search-bar">
+                <form class="search-form d-flex align-items-center" method="POST" action="#">
+                    <input type="text" name="query" title="Enter search keyword">
+                    <i class="fa-solid fa-magnifying-glass search-glass"></i>
+                    <button class="search-btn">SEARCH</button>
+                </form>
+            </div>
+            <nav class="d-flex align-items-end">
+                <a href="#" class="login"><i class="fa-solid fa-circle-user"></i>&nbsp Login/Sign Up</a>
+                <button class="navbar-toggler togglebar" type="button"><i class="fas fa-bars"></i></button>
+                <div class="collapse-content justify-content-xl-end d-flex flex-column flex-xl-row">
+                    <div class="close_nav d-xl-none">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <a class="navbar-brand d-xl-none text-xl-start text-center mt-4" href=""><img
+                            src="/assets/Images/logo 1.png" alt=""></a>
+                    <ul class="navbar nav-menu">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Contact</a>
+                        </li>
+                        <li class="nav-item position-relative">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-circle-user"></i>
+                                Login/Sign Up
+                            </a>
+                        </li>
+                        <li class="nav-item position-relative">
+                            <a class="nav-link icon cart_link" href="">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <b> My Cart</b>
+                            </a>
+                            <div class="product_box cart_box">
+                                <div class="text-end">
+                                    <a class="close_icon close_popup_cart" href="">
+                                        <i class="fas fa-times"></i>
+                                    </a>
+                                </div>
+                        <li class="nav-item position-relative">
+                            <a class="nav-link" href="">
+                                <i class="fa-solid fa-heart"></i>
+                                <b>Wishlist</b>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="bottom-nav d-flex align-items-center justify-content-between">
+            <ul class="navigation position-relative">
+                <li class="nav-item dropdown bottom-nav-item"> <a class="nav-link dropdown-toggle" href="#"
+                        id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Vegetables
+                    </a> </li>
+                <li class="nav-item dropdown bottom-nav-item"> <a class="nav-link dropdown-toggle" href="#"
+                        id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Fruits
+                    </a></li>
+                <li class="nav-item bottom-nav-item"><a class="nav-link active" aria-current="page" href="#">Grains</a>
+                </li>
+                <li class="nav-item bottom-nav-item"><a class="nav-link active" aria-current="page"
+                        href="#">Dryfruits</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--------------- header-end ------------------>
+
+    <!------------- banner-start ---------------------->
+
+    <section class="align-items-center ">
+        <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="banner-section ">
+                        <div class="container ">
+                            <div class="row">
+                                <div class="col-lg-6 d-flex flex-column justify-content-center banner-part">
+                                    <div class="banner-txt ">
+                                        <h2><span>100% Organic</span> <br>Fresh and Natural <br> Farm food</h2>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum
+                                        </p>
+                                        <button class="banner-btn">Explore +</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="leaf-1">
+                            <img src="./assets/images/shape-1.png" alt="">
+                        </span>
+                        <span class="leaf-2">
+                            <img src="./assets/images/shape-2.png" alt="">
+                        </span>
+                        <div class="bottom-banner">
+                            <img src="./assets/images/bannerbottom-shape 1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-btn-1"></div>
+            <div class="swiper-button-prev swiper-btn-2"></div>
+        </div>
+        </div>
+    </section>
+
+    <!--------- Banner-end ---------->
+
+    <main>
+        <!----------- category product -------------->
+        <section class="category">
+            <div class="container">
+                <div class="row">
+                    <div class="category-width">
+                        <div class="icon-box col-lg-2 col-md-2 col-6">
+                            <div class="product-icon"><img src="./assets/images/All-products.png" alt="">
+                            </div>
+                            <a href="">All Products</a>  
+                        </div>
+                        <div class="icon-box col-lg-2 col-md-2 col-6">
+                            <div class="product-icon"><img src="./assets/images/vegetables.png" alt="">
+                            </div>
+                            <a href="">Vegetables</a>
+                        </div>
+                        <div class="icon-box col-lg-2 col-md-2 col-6">
+                            <div class="product-icon"><img src="./assets/images/fruits.png" alt=""></div>
+                            <a href="">Fruits</a>
+                        </div>
+                        <div class="icon-box col-lg-2 col-md-2 col-6">
+                            <div class="product-icon"><img src="./assets/images/bread.png" alt=""></div>
+                            <a href="">Bread</a>
+                        </div>
+                        <div class="icon-box col-lg-2 col-md-2 col-6">
+                            <div class="product-icon"><img src="./assets/images/juice.png" alt=""></div>
+                            <a href="">Juices</a>
+                        </div>
+                        <div class="icon-box col-lg-2 col-md-2 col-6">
+                            <div class="product-icon"><img src="./assets/images/tea.png" alt=""></div>
+                            <a href="">Tea</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!----------- Category products end ------------->
+
+
+        <!------------- featured products starts-------------------->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="section-heading">
+                        <p> VISIT OUR SHOP </p>
+                        <h2> Featured Products </h2>
+                    </div>
+                    <!-- swipper -->
+                    <div class="featured-crousel position-relative">
+                        <div class="swiper mySwiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="swiper px-2 swiper-initialized swiper-horizontal swiper-pointer-events">
+                                        <div class="product-card">
+                                            <div class="discount">
+                                                <p>20% OFF</p>
+                                            </div>
+                                            <div class="item-cat">
+                                                <img src="./assets/Images/veg.png" alt="">
+                                            </div>
+                                            <div class="item-img">
+                                                <img src="./assets/Images/grapes.jpg" alt="">
+                                            </div>
+                                            <div class="product-name">
+                                                <p>Juicy Grapes</p>
+                                            </div>
+                                            <div
+                                                class="product-add-cart d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <p>₹ 80 <i class="fa-solid fa-tag"></i><br>
+                                                        <span class="discount-product">₹ 100 </span>
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <button class="green-btn ">View Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper px-2 swiper-initialized swiper-horizontal swiper-pointer-events">
+                                        <div class="product-card">
+                                            <div class="discount">
+                                                <p>17% OFF</p>
+                                            </div>
+                                            <div class="item-cat">
+                                                <img src="./assets/Images/veg.png" alt="">
+                                            </div>
+                                            <div class="item-img">
+                                                <img src="./assets/Images/J & K.jpg" alt="">
+                                            </div>
+                                            <div class="product-name">
+                                                <p>J&K Walnuts</p>
+                                            </div>
+                                            <div
+                                                class="product-add-cart d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <p>₹ 500 <i class="fa-solid fa-tag"></i><br>
+                                                        <span class="discount-product">₹ 600 </span>
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <button class="green-btn ">View Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper px-2 swiper-initialized swiper-horizontal swiper-pointer-events">
+                                        <div class="product-card">
+                                            <div class="discount">
+                                                <p>20% OFF</p>
+                                            </div>
+                                            <div class="item-cat">
+                                                <img src="./assets/Images/veg.png" alt="">
+                                            </div>
+                                            <div class="item-img">
+                                                <img src="./assets/Images/watermelon.jpg" alt="">
+                                            </div>
+                                            <div class="product-name">
+                                                <p>Red Watermelon</p>
+                                            </div>
+                                            <div
+                                                class="product-add-cart d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <p>₹ 40 <i class="fa-solid fa-tag"></i><br>
+                                                        <span class="discount-product">₹ 50 </span>
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <button class="green-btn ">View Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper px-2 swiper-initialized swiper-horizontal swiper-pointer-events">
+                                        <div class="product-card">
+                                            <div class="discount">
+                                                <p>20% OFF</p>
+                                            </div>
+                                            <div class="item-cat">
+                                                <img src="./assets/Images/veg.png" alt="">
+                                            </div>
+                                            <div class="item-img">
+                                                <img src="./assets/Images/cashew.jpg" alt="">
+                                            </div>
+                                            <div class="product-name">
+                                                <p>Fresh Cahsew</p>
+                                            </div>
+                                            <div
+                                                class="product-add-cart d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <p>₹ 400 <i class="fa-solid fa-tag"></i><br>
+                                                        <span class="discount-product">₹ 500 </span>
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <button class="green-btn ">View Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper px-2 swiper-initialized swiper-horizontal swiper-pointer-events">
+                                        <div class="product-card">
+                                            <div class="discount">
+                                                <p>20% OFF</p>
+                                            </div>
+                                            <div class="item-cat">
+                                                <img src="./assets/Images/veg.png" alt="">
+                                            </div>
+                                            <div class="item-img">
+                                                <img src="./assets/Images/grapes.jpg" alt="">
+                                            </div>
+                                            <div class="product-name">
+                                                <p>Juicy Grapes</p>
+                                            </div>
+                                            <div
+                                                class="product-add-cart d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <p>₹ 80 <i class="fa-solid fa-tag"></i><br>
+                                                        <span class="discount-product">₹ 100 </span>
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <button class="green-btn ">View Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button1 swiper-btn">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="swiper-button2 swiper-btn">
+                            <i class="fas fa-chevron-left"></i>
+                        </div>
+                    </div>
+                </div>
+                <button class="yellow-btn">All Products +</button>
+            </div>
+        </section>
+
+        <!------------- featured products ends-------------------->
+
+
+        <!----------------- discount products starts ----------------------->
+        <section class="discount-items">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="orange">
+                            <div class="white-box">
+                                <h3>ORANGES</h3>
+                                <img src="./assets/images/orange 1.png" alt="">
+                                <div class="offer-text">20% Off</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="watermelon">
+                            <div class="white-box">
+                                <h3>WATERMELON</h3>
+                                <img src="./assets/images/watermelon.png" alt="">
+                                <div class="offer-text">20% Off</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!----------------- discount products ends ----------------------->
+
+
+        <!------------------ new arrivals starts ------------------>
+        <section class="new-arrival">
+            <div class="container">
+                <div class="row">
+                    <div class="section-heading">
+                        <p>VISIT OUR SHOP</p>
+                        <h2>New Arrival</h2>
+                    </div>
+                    <!-- Swiper js  -->
+                    <div class="featured-crousel position-relative">
+                        <div class="swiper mySwiper3">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="swiper px-2 swiper-initialized swiper-horizontal swiper-pointer-events">
+                                        <div class="product-card">
+                                            <div class="discount">
+                                                <p>20% OFF</p>
+                                            </div>
+                                            <div class="item-cat">
+                                                <img src="./assets/images/veg.png" alt="">
+                                            </div>
+                                            <div class="item-img">
+                                                <img src="./assets/images/grapes.jpg" alt="">
+                                            </div>
+                                            <div class="product-name">
+                                                <p>Juicy Grapes</p>
+                                            </div>
+                                            <div
+                                                class="product-add-cart d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <p>₹ 80 <i class="fa-solid fa-tag"></i><br>
+                                                        <span class="discount-product">₹ 100 </span>
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <button class="green-btn ">View Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper px-2 swiper-initialized swiper-horizontal swiper-pointer-events">
+                                        <div class="product-card">
+                                            <div class="discount">
+                                                <p>17% OFF</p>
+                                            </div>
+                                            <div class="item-cat">
+                                                <img src="./assets/images/veg.png" alt="">
+                                            </div>
+                                            <div class="item-img">
+                                                <img src="./assets/images/J & K.jpg" alt="">
+                                            </div>
+                                            <div class="product-name">
+                                                <p>J&K Walnuts</p>
+                                            </div>
+                                            <div
+                                                class="product-add-cart d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <p>₹ 500 <i class="fa-solid fa-tag"></i><br>
+                                                        <span class="discount-product">₹ 600 </span>
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <button class="green-btn ">View Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper px-2 swiper-initialized swiper-horizontal swiper-pointer-events">
+                                        <div class="product-card">
+                                            <div class="discount">
+                                                <p>20% OFF</p>
+                                            </div>
+                                            <div class="item-cat">
+                                                <img src="./assets/images/veg.png" alt="">
+                                            </div>
+                                            <div class="item-img">
+                                                <img src="./assets/images/watermelon.jpg" alt="">
+                                            </div>
+                                            <div class="product-name">
+                                                <p>Red Watermelon</p>
+                                            </div>
+                                            <div
+                                                class="product-add-cart d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <p>₹ 40 <i class="fa-solid fa-tag"></i><br>
+                                                        <span class="discount-product">₹ 50 </span>
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <button class="green-btn ">View Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper px-2 swiper-initialized swiper-horizontal swiper-pointer-events">
+                                        <div class="product-card">
+                                            <div class="discount">
+                                                <p>20% OFF</p>
+                                            </div>
+                                            <div class="item-cat">
+                                                <img src="./assets/images/veg.png" alt="">
+                                            </div>
+                                            <div class="item-img">
+                                                <img src="./assets/images/cashew.jpg" alt="">
+                                            </div>
+                                            <div class="product-name">
+                                                <p>Fresh Cahsew</p>
+                                            </div>
+                                            <div
+                                                class="product-add-cart d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <p>₹ 400 <i class="fa-solid fa-tag"></i><br>
+                                                        <span class="discount-product">₹ 500 </span>
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <button class="green-btn ">View Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper px-2 swiper-initialized swiper-horizontal swiper-pointer-events">
+                                        <div class="product-card">
+                                            <div class="discount">
+                                                <p>20% OFF</p>
+                                            </div>
+                                            <div class="item-cat">
+                                                <img src="./assets/images/veg.png" alt="">
+                                            </div>
+                                            <div class="item-img">
+                                                <img src="./assets/images/grapes.jpg" alt="">
+                                            </div>
+                                            <div class="product-name">
+                                                <p>Juicy Grapes</p>
+                                            </div>
+                                            <div
+                                                class="product-add-cart d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <p>₹ 80 <i class="fa-solid fa-tag"></i><br>
+                                                        <span class="discount-product">₹ 100 </span>
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <button class="green-btn">View Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button1 swiper-btn">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="swiper-button2 swiper-btn">
+                            <i class="fas fa-chevron-left"></i>
+                        </div>
+                    </div>
+                </div>
+                <button class="yellow-btn">All Products +</button>
+            </div>
+        </section>
+        <!------------------ new arrivals ends ------------------>
+
+
+        <!------------------- why choose us starts -------------------->
+       
+        <section>
+            <img src="./assets/images/green 1.png" id="green-img" alt="">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="section-heading2">
+                        <h2>Why Choose Us</h2>
+                        <img src="./assets/images/lemon 1.png" id="lemon" alt="">
+
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-xl-4  col-lg-4 col-md-6  col-6 left-heading horizontal-border vertical-border">
+                                    <h5>100% Natural</h5>
+                                    <p class="left-para">Lorem Ipsum is simply dummy text of the printing and
+                                        typesetting
+                                        industry. Lorem
+                                        Ipsum has been the industry's standard </p>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-6 right-heading horizontal-border">
+                                    <h5>Always Fresh</h5>
+                                    <p class="right-para">Lorem Ipsum is simply dummy text of the printing and
+                                        typesetting
+                                        industry. Lorem
+                                        Ipsum has been the industry's standard </p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-6  left-heading vertical-border">
+                                    <h5>Premium Quality</h5>
+                                    <p class="left-para">Lorem Ipsum is simply dummy text of the printing and
+                                        typesetting
+                                        industry. Lorem
+                                        Ipsum has been the industry's standard </p>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-6  right-heading">
+                                    <h5>Super Healthy</h5>
+                                    <p class="right-para">Lorem Ipsum is simply dummy text of the printing and
+                                        typesetting
+                                        industry. Lorem
+                                        Ipsum has been the industry's standard </p>
+                                </div>
+                            </div>
+                            <img src="./assets/images/jk 2.png" id="watermln" alt="">
+                            <img src="./assets/images/vegi 2.png" id="vegetable" alt="">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!------------------- why choose us ends ---------------------->
+
+
+        <!------------------------ best products starts ----------------->
+        <section class="best-products">
+            <div class="container">
+                <div class="row">
+                    <div class="section-heading">
+                        <p>VISIT OUR SHOP</p>
+                        <h2>Best Products</h2>
+                    </div>
+                    <!-- Swiper js  -->
+                    <div class="featured-crousel position-relative">
+                        <div class="swiper mySwiper4">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="swiper px-2 swiper-initialized swiper-horizontal swiper-pointer-events">
+                                        <div class="product-card">
+                                            <div class="discount">
+                                                <p>20% OFF</p>
+                                            </div>
+                                            <div class="item-cat">
+                                                <img src="./assets/images/veg.png" alt="">
+                                            </div>
+                                            <div class="item-img">
+                                                <img src="./assets/images/grapes.jpg" alt="">
+                                            </div>
+                                            <div class="product-name">
+                                                <p>Juicy Grapes</p>
+                                            </div>
+                                            <div
+                                                class="product-add-cart d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <p>₹ 80 <i class="fa-solid fa-tag"></i><br>
+                                                        <span class="discount-product">₹ 100 </span></p>
+                                                </div>
+                                                <div>
+                                                    <button class="green-btn ">View Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper px-2 swiper-initialized swiper-horizontal swiper-pointer-events">
+                                        <div class="product-card">
+                                            <div class="discount">
+                                                <p>17% OFF</p>
+                                            </div>
+                                            <div class="item-cat">
+                                                <img src="./assets/images/veg.png" alt="">
+                                            </div>
+                                            <div class="item-img">
+                                                <img src="./assets/images/J & K.jpg" alt="">
+                                            </div>
+                                            <div class="product-name">
+                                                <p>J&K Walnuts</p>
+                                            </div>
+                                            <div
+                                                class="product-add-cart d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <p>₹ 500 <i class="fa-solid fa-tag"></i><br>
+                                                        <span class="discount-product">₹ 600 </span></p>
+                                                </div>
+                                                <div>
+                                                    <button class="green-btn ">View Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper px-2 swiper-initialized swiper-horizontal swiper-pointer-events">
+                                        <div class="product-card">
+                                            <div class="discount">
+                                                <p>20% OFF</p>
+                                            </div>
+                                            <div class="item-cat">
+                                                <img src="./assets/images/veg.png" alt="">
+                                            </div>
+                                            <div class="item-img">
+                                                <img src="./assets/images/watermelon.jpg" alt="">
+                                            </div>
+                                            <div class="product-name">
+                                                <p>Red Watermelon</p>
+                                            </div>
+                                            <div
+                                                class="product-add-cart d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <p>₹ 40 <i class="fa-solid fa-tag"></i><br>
+                                                        <span class="discount-product">₹ 50 </span></p>
+                                                </div>
+                                                <div>
+                                                    <button class="green-btn ">View Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper px-2 swiper-initialized swiper-horizontal swiper-pointer-events">
+                                        <div class="product-card">
+                                            <div class="discount">
+                                                <p>20% OFF</p>
+                                            </div>
+                                            <div class="item-cat">
+                                                <img src="./assets/images/veg.png" alt="">
+                                            </div>
+                                            <div class="item-img">
+                                                <img src="./assets/images/cashew.jpg" alt="">
+                                            </div>
+                                            <div class="product-name">
+                                                <p>Fresh Cahsew</p>
+                                            </div>
+                                            <div
+                                                class="product-add-cart d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <p>₹ 400 <i class="fa-solid fa-tag"></i><br>
+                                                        <span class="discount-product">₹ 500 </span></p>
+                                                </div>
+                                                <div>
+                                                    <button class="green-btn ">View Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper px-2 swiper-initialized swiper-horizontal swiper-pointer-events">
+                                        <div class="product-card">
+                                            <div class="discount">
+                                                <p>20% OFF</p>
+                                            </div>
+                                            <div class="item-cat">
+                                                <img src="./assets/images/veg.png" alt="">
+                                            </div>
+                                            <div class="item-img">
+                                                <img src="./assets/images/grapes.jpg" alt="">
+                                            </div>
+                                            <div class="product-name">
+                                                <p>Juicy Grapes</p>
+                                            </div>
+                                            <div
+                                                class="product-add-cart d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <p>₹ 80 <i class="fa-solid fa-tag"></i><br>
+                                                        <span class="discount-product">₹ 100 </span></p>
+                                                </div>
+                                                <div>
+                                                    <button class="green-btn ">View Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button1 swiper-btn">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        <div class="swiper-button2 swiper-btn">
+                            <i class="fas fa-chevron-left"></i>
+                        </div>
+                    </div>
+                </div>
+                <button class="yellow-btn">All Products +</button>
+            </div>
+        </section>
+
+        <!------------------------ best products ends ----------------->
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-row-top row">
+                <div class="footer-heading col-xl-3 col-lg-3 col-md-3  col-6">
+                    <h3 class="section-title ">About</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias aliquam nobis expedita vel!
+                        Obcaecati iste molestiae, commodi voluptas sunt magni nulla modi optio nemo exercitationem!</p>
+                    <a class="find-us" href="#"><i class="fa-solid fa-arrow-right"></i>FIND US ON MAP</a>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-6">
+                    <h3 class="section-title">Our Support</h3>
+                    <div class="list">
+                        <a class="links" href="#">Help and Ordering</a>
+                        <a class="links" href="#">Return & Cancellation</a>
+                        <a class="links" href="#">Delivery Schedule</a>
+                        <a class="links" href="#">Get a Call</a>
+                        <a class="links" href="#">Online Enquiry</a>
+                        <a class="links" href="#">My Account</a>
+                    </div>
+                </div>
+                <address class="footer-heading col-xl-3 col-lg-3 col-md-3 col-6">
+                    <h3 class="section-title contact-info">Contact info</h3>
+                    <div class="list">
+                        <a class="links" href="#"><i class="fa-solid fa-location-dot icons"></i> &nbsp LOCATION</a>
+                        <div>
+                            <p>2750 Quadra Street Victioria Road, <br> New York, Canada</p>
+                        </div>
+                        <a class="links" href="tel:987-0986-0987"><i class="fa-solid fa-phone icons"></i> &nbsp CALL
+                            US</a>
+                        <div>
+                            <a href="tel:987-0986-0987">
+                                <p class="contact">987-0986-0987</p>
+                            </a>
+                        </div>
+                        <a class="links" href="mailto:trifles@gmail.com"><i class="fa-solid fa-envelope icons"></i>
+                            &nbsp EMAIL US</a>
+                        <div>
+                            <a href="mailto:trifles@gmail.com">
+                                <p class="contact">trifles@gmail.com</p>
+                            </a>
+                        </div>
+                    </div>
+                </address>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-6">
+                    <h3 class="section-title newsletter">Newsletter</h3>
+                    <div class="list">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, fugiat!</p>
+                    </div>
+                    <div class="subscribe">
+                        <form>
+                            <input class="form-control me-2 form-c" type="search" placeholder="Enter your email"
+                                aria-label="Search">
+                        </form>
+                        <button class="btn sub-btn" type="submit">Subscribe Now +</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-row-bottom row">
+                <div class=" col-md-6 col-6">
+                    <p>Copyright @ 2022 Trifles.All Rights Reserved by <b>EnvyTheme</b></p>
+                </div>
+                <div class="col-md-6 col-6">
+                    <div class="list d-flex justify-content-end">
+                        <a class="links terms" href="#">Terms & Conditions </a>
+                        <p class="stick">|</p>
+                        <a class="links policy" href="#">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#"><i class="fa-solid fa-circle-chevron-up green-arrow"></i></a>
+        
+    </footer>
+
+
+
+
+
+
+    <!-- ---------------------- js files ---------------------------- -->
+
+    <!-- jquery js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- fontawesome js -->
+    <script src="assets/js/all.min.js"></script>
+
+    <!-- swipper js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js -->
+      <script src="assets/js/custom.js"></script>
+      
+</body>
+
+</html>

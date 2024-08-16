@@ -1,0 +1,358 @@
+@media (max-width: 1600px) {
+    .togglebar{display: none;}
+    .login{display: none;}
+}
+
+@media (max-width: 1199.98px) {
+    .bottom-nav-item {display: none;}
+    .togglebar{display: block;}
+    .login{display: none;}
+nav .collapse-content {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    padding: 20px;
+    display: block;
+    z-index: 11;
+    transform: translateX(-100%);
+    transition: .4s;
+}
+nav .collapse-content.active {transform: translateX(0);}
+.nav-menu{
+    flex-direction: column; 
+    margin-top: 30px;
+    padding-right: 40px;
+}
+nav .nav-link {
+    margin: 12px 0;
+    padding: 0;
+}
+nav .close_nav {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: .2s;
+    color: gray;
+}
+}
+
+
+
+
+@media (max-width: 1600px) {
+
+}
+
+
+@media (max-width: 1440px) {
+
+}
+
+
+@media (min-width: 1280px) and (max-width: 1366px) {
+    .nav-link {
+        padding: 8px 15px;
+    }
+    .green-arrow {
+        left: 95%;
+        bottom: 25px;
+    }
+
+}
+@media (max-width: 1199.98px) {
+
+    header {
+        padding: 0 0 8px 0px;
+    }
+    .search-bar {
+        margin-left: 0;
+    }
+    .login {
+        display: block;
+    }
+    .login {
+        padding: 0;
+        margin: 0 20px -2px 0px;
+    }
+    .login:hover {
+        color: #209e2e;
+    }
+    .banner-txt h3 {
+        font-size: 45px;
+    }
+    .banner-txt h3 {
+        font-size: 35px;
+    }
+    .section-heading h2 {
+        font-size: 40px;
+    }
+    .white-box h3 {
+        font-size: 30px;
+    }
+    .offer-text {
+        font-size: 30px;
+        width: 145px;
+        bottom: 10%;
+    }
+    #lemon {
+        width: 21%;
+    }
+    .section-heading2 {
+        height: 725px;
+    }
+    .white-box img {
+        left: 6%;
+    }
+    .section-heading2 {
+        height: 775px;
+    }
+    .section-heading2 h2 {
+        font-size: 40px;
+    }
+    .left-heading h5 {
+        font-size: 20px;
+    }
+    .right-heading h5 {
+        font-size: 20px;
+    }
+    #vegetable {
+        left: 25%;
+        width: 45%;
+    }
+    #watermln {
+        width: 15%;
+    }
+}
+
+
+@media (max-width: 991.98px) {
+ 
+    .banner-section {
+        height: 400px;
+    }
+    .leaf-1 {
+        top: 40px;
+    }
+    .leaf-1 img {
+        width: 70%;
+    }
+    .leaf-2 {
+        left: 90%;
+        bottom: 12%;
+    }
+    .banner-txt {
+        left: 2%;
+        top: -15%;
+    }
+    .category-width {
+        width: 100%;
+    }
+    .product-icon {
+        height: 80px;
+        width: 80px;
+    }
+    .section-heading h2 {
+        font-size: 35px;
+    }
+    .offer-text {
+        width: 140px;
+        bottom: -10%;
+    }
+    .section-heading2 h2 {
+        font-size: 35px;
+        padding-bottom: 20px;
+    }
+    .section-heading2 {
+        height: 670px;
+    }
+    #lemon {
+        width: 20%;
+    }
+    #lemon {
+        left: -1%;
+    }
+    .left-para {
+        margin-left: 20px;
+    }
+    #vegetable {
+        padding-top: 20px;
+    }
+    footer .links {
+        font-size: 13px;
+    }
+    .btn.sub-btn {
+        padding: 10px 0;
+        width: 200px;
+    }
+    footer p {
+        font-size: 12px;
+    }
+    .green-arrow {
+        left: 92%;
+        bottom: 15px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .leaf-1 img {
+        display: none;
+    }
+    .leaf-2 img {
+        display: none;
+    }
+    .banner-txt {
+        left: 10%;
+        top: -10%;
+    }
+    #lemon {
+        display: none;
+    }
+    #watermln {
+        display: none;
+    }
+    .section-heading2 {
+        height: 605px;
+    }
+    .best-products {
+        padding: 60px 0 0px;
+    }
+    .form-control.me-2.form-c {
+        padding: 7px 23px;
+        width: 175px;
+    }
+    .btn.sub-btn {
+        padding: 7px 0;
+        width: 175px;
+    }
+    .green-arrow {
+        left: 90%;
+        bottom: 8px;
+    }
+}
+
+
+@media (max-width: 767.98px) {
+
+    .login {
+        display: none;
+    }
+    .svg-inline--fa.fa-bars {
+        font-size: 22px;
+        margin-right: 10px;
+    }
+    .banner-txt h3 {
+        font-size: 40px;
+    }
+    .banner-txt h3 {
+        font-size: 30px;
+    }
+    .leaf-1 img {
+        display: none;
+    }
+    .leaf-2 img {
+        display: none;
+    }
+    .orange {
+        margin-bottom: 30px;
+    }
+    .offer-text {
+        bottom: 5%;
+        font-size: 25px;
+    }
+    .left-heading h5 {
+        font-size: 16px;
+    }
+    .left-para {
+        margin-left: 20px;
+        font-size: 12px;
+    }
+    .right-heading h5 {
+        font-size: 16px;
+    }
+    .right-para {
+        font-size: 12px;
+    }
+    .section-heading2 {
+        height: 560px;
+    }
+    #lemon {
+        display: none;
+    }
+    #watermln {
+        display: none;
+    }
+    .best-products {
+        padding: 40px 0 0px;
+    }
+    .form-control.me-2.form-c {
+        padding: 8px 50px;
+        width: 230px;
+    }
+    .btn.sub-btn {
+        padding: 8px 0px;
+        width: 230px;
+    }
+    .green-arrow {
+        font-size: 25px;
+    }
+    .green-arrow {
+        left: 94%;
+        bottom: 25px;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    path:hover {
+        color: #209e2e;
+    }
+    .banner-txt {
+        left: 10%;
+    }
+    .section-heading h2 {
+        font-size: 30px;
+    }
+    .section-heading2 {
+        height: 500px;
+    }
+}
+
+
+@media (max-width: 575.98px) {
+
+    .search-bar {
+        width: 300px;
+    }
+    .search-form input {
+        width: 50%;
+    }
+    path:hover {
+        color: #209e2e;
+    }
+    .banner-txt {
+        left: 10%;
+    }
+    .category-width {
+        width: 75%;
+    }
+    .section-heading h2 {
+        font-size: 30px;
+    }
+    .section-heading2 {
+        height: 500px;
+    }
+    .footer-row-bottom {
+        padding: 35px 0px 0px 0;
+    }
+    .footer-row-top {
+        margin-left: 10px;
+    }
+}
